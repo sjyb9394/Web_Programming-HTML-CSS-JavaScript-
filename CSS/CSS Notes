@@ -1,0 +1,106 @@
+CSS
+
+What is CSS?
+  -	CSS (Cascading Style Sheets) allow you to create great-looking web pages.
+  -	A language for specifying how documents are presented to users, how they are styled, laid out, etc.
+  -	A document is usually a text file structured using a markup language (HTML)
+  -	Presenting a document to a user means converting it into a form usable by your audience.
+
+Syntex
+  -	CSS is rule-based language.
+  ex) h1 {
+      color:red;
+      font-size: 5m;
+    }
+  -	The rule opens with selector. This selects the HTML element that we are going to style. 
+  -	Then we have set of curly braces. Inside those will be one or more declarations, which take the form of property and value pairs.
+
+Adding CSS to document
+  -	<link rel=”stylesheet” href=”styles.css”>
+  -	use dot(.) to specify class
+  -	use comma(,) to specify more than one element
+  -	use shart(#) to specify id
+
+Styling things based on their location
+  -	Descendant combinator: The selector will select element that is inside of outside element
+  -	Adjacent sibling combinator : Use +
+
+Styling things based on state
+  -	ex) a:link, a:visited, a:hover
+
+Internal Stylesheet
+  -	You can also create an internal stylesheet by placing <style> inside <head>
+
+Inline style
+  -	use style attribute and give property and value pairs inside “”, delimited by ;
+
+Comments : Use /* …*/
+
+How does CSS actually work?
+  1.	The browser loads the HTML
+  2.	It converts the HTML into a DOM (Document Object Model). The DOM represents the document in the computer’s memory.
+  3.	The browser then fetches most of the resources that are linked to by the HTML document, such as embedded images and videos and linked CSS. 
+  4.	The browser parses the fetched CSS, and sorts the different rules by their selector types into different “buckets”, eg. element, class, ID, and so on. 
+  Based on the selectors it finds, it works out which rules should be applied to which nodes in the DOM, and attaches style to them as required
+  5.	The render tree is laid out in the structure it should appear in after the rules have been applied to it,.
+  6.	The visual display of the page is shown on the screen.
+
+DOM
+  -	DOM has a tree-like structure. Each element, attribute, and piece of text in the markup language becomes a DOM node in the tree structure. 
+  The nodes are defined by their relationship to other DOM nodes.
+
+Commonly Used Properties
+  -	font
+  -	box-model
+    o	width
+    o	height
+    o	padding
+    o	border
+    o	margin
+  -	display
+    o	none
+    o	block
+    o	inline
+    o	inline-block
+  -	flex
+    o	container
+      	flex-direction
+      	flex-wrap
+      	justify-content
+        •	flex-start
+        •	flex-end
+        •	center
+        •	space-between
+        •	space-around
+        •	space-evenly
+      	align-content
+        •	flex-start
+        •	flex-end
+        •	center
+        •	stretch
+        •	space-between
+        •	space-around
+      	align-items
+        •	flex-start
+        •	flex-end
+        •	center
+        •	stretch
+        •	baseline
+    o	item
+      	order
+      	flex-grow
+  -	align
+    o	text-align
+      	center
+      	left
+      	right
+    o	margin
+  -	float
+    o	right
+    o	left
+  -	background
+    o	background-image
+    o	background-color
+    o	background-size
+    o	background-position
+    o	backgroun-repeat
