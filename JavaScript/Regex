@@ -1,0 +1,61 @@
+Regular Expression Basics
+.       :	Any character except newline
+a       : The character a
+ab      :	The string ab
+a|b     :	a or b
+a*	    : 0 or more a's
+\	      : Escapes a special character
+
+Regular Expression Quantifiers
+*	      : 0 or more
++	      : 1 or more
+?	      : 0 or 1
+{2}	    :Exactly 2
+{2, 5}  :	Between 2 and 5
+{2,}	  : 2 or more
+
+Regular Expression Groups
+(...)	  : Capturing group
+(?:...)	: Non-capturing group
+\Y	    : Match the Y'th captured group
+
+Regular Expression Character Classes
+[ab-d]	: One character of: a, b, c, d
+[^ab-d]	: One character except: a, b, c, d
+[\b]	  : Backspace character
+\d	    : One digit
+\D	    : One non-digit
+\s	    : One whitespace
+\S	    : One non-whitespace
+\w	    : One word character
+\W	    : One non-word character
+
+Regular Expression Assertions
+^	      : Start of string
+$	      : End of string
+\b	    : Word boundary
+\B	    : Non-word boundary
+(?=...)	: Positive lookahead
+(?!...)	: Negative lookahead
+
+Regular Expression Flags
+g	      : Global Match
+i	      : Ignore case
+m	^ and $ : match start and end of line
+
+Regular Expression Special Characters
+\n	    : Newline
+\r	    : Carriage return
+\t	    : Tab
+\0	    : Null character
+\YYY	  : Octal character YYY
+\xYY	  : Hexadecimal character YY
+\uYYYY	: Hexadecimal character YYYY
+\cY	    : Control character Y
+
+Regular Expression Replacement
+$$	    : Inserts $
+$&	    : Insert entire match
+$`	    : Insert preceding string
+$'	    : Insert following string
+$Y	    : Insert Y'th captured group
