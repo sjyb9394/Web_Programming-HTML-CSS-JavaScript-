@@ -6,3 +6,6 @@ str.charCodeAt(index);
 
 ascii to character
 String.fromCharCode(value);
+
+Check alphanumeric
+str.rerplace(/[^a-z0-9]/gi,'');
